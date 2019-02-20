@@ -1,0 +1,9 @@
+name: Anti-extortion-plugin
+version: 1.0.0
+author: Moon
+main: antiextortionplugin.Main
+api-version: 1.12.2
+commands:
+   auth:
+      description: Authenticate with server, when required
+      usage: /auth [passcode]

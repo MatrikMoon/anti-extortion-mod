@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="anti-extortion-plugin_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/anti_extortion_plugin_main_jar</output-path>
+    <root id="archive" name="anti-extortion.jar">
+      <element id="module-output" name="anti-extortion-plugin_main" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/spigot-api-1.12.2-R0.1-20180620.032051-149.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+    </root>
+  </artifact>
+</component>
