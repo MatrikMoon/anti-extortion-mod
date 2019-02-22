@@ -39,7 +39,6 @@ public class AntiExtortion
         MinecraftForge.EVENT_BUS.register(loginListener);
         MinecraftForge.EVENT_BUS.register(commandListener);
         MinecraftForge.EVENT_BUS.register(playerListener);
-        NetworkRegistry.INSTANCE.
     }
 
     @EventHandler
