@@ -3,6 +3,7 @@ package moon.commands;
 import moon.data.AuthData;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -23,6 +24,12 @@ public class Register extends CommandBase {
     public int getRequiredPermissionLevel()
     {
         return 0;
+    }
+
+    @Override
+    public boolean checkPermission(MinecraftServer server, ICommandSender sender)
+    {
+        return sender instanceof EntityPlayerMP;
     }
 
     @Override

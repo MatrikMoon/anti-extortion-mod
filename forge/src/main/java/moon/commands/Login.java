@@ -42,6 +42,12 @@ public class Login extends CommandBase {
     }
 
     @Override
+    public boolean checkPermission(MinecraftServer server, ICommandSender sender)
+    {
+        return sender instanceof EntityPlayerMP;
+    }
+
+    @Override
     public String getName()
     {
         return "login";
